@@ -7,12 +7,12 @@ steps:
     inputs:
       command: 'custom'
       customcommand: 'install --production'
-      
+
   - task: Npm@1
     displayName: 'Install jest'
     inputs:
       command: 'custom'
-      customcommand: 'install -g jest'
+      customcommand: 'install jest'
 
   - script: 'npm test'
     displayName: 'Run unit tests'
